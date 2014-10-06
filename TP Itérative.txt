@@ -1,0 +1,230 @@
+TP Itérative
+
+Exercice 1:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int table, cpt=0;
+            Console.WriteLine("Saisir la table de multiplication désirée");
+            table = Int32.Parse(Console.ReadLine());
+            while (cpt < 10)
+            {
+                cpt = cpt + 1;
+                Console.WriteLine(table * cpt);
+            }
+            Console.ReadLine();
+        }
+        
+    }
+}
+
+Exercice 2:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int nb=0;
+            while (nb < 10 || nb > 20)
+            {
+                Console.WriteLine("Saisir un nombre entre 10 et 20");
+                nb = Int32.Parse(Console.ReadLine());
+                if (nb > 20)
+                { Console.WriteLine("Plus petit!"); }
+                if (nb < 10)
+                { Console.WriteLine("Plus grand!"); }
+            }
+        }
+        
+    }
+}
+
+Exercice 3:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int nbdep,cpt=0;
+            Console.WriteLine("Saisir un nombre de départ");
+            nbdep = Int32.Parse(Console.ReadLine());
+            while (cpt < 10)
+            {
+                Console.WriteLine(nbdep + 1);
+                nbdep = nbdep + 1;
+                cpt = cpt + 1;
+            }
+            Console.ReadLine();
+        }
+        
+    }
+}
+
+Exercice 4:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int nbdep, cpt, a = 0, b = 0, c = 0;
+            Console.WriteLine("Saisir un nombre de départ");
+            nbdep = Int32.Parse(Console.ReadLine());
+            
+            for (cpt = 0; cpt <= nbdep;cpt++)
+            {
+                a = a+cpt;
+                if (!(cpt != nbdep)) //Subterfuge car problème pour "cpt=nbdep"
+                {
+                    Console.WriteLine(a);
+                }
+                
+            }
+            
+            Console.ReadLine();
+            
+            }
+
+
+    }
+}
+
+Exercice 5:
+
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int nbdep, cpt, a = 1, b = 0, c = 0;
+            Console.WriteLine("Saisir un nombre de départ");
+            nbdep = Int32.Parse(Console.ReadLine());
+            
+            for (cpt = 1; cpt <= nbdep;cpt++)
+            {
+                a = a*cpt;
+                
+                    Console.WriteLine(a);
+                
+                
+            }
+            
+            Console.ReadLine();
+            
+            }
+
+
+    }
+}
+
+Exercice 6:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double nb1, nb2, nb3, nb4, nb5, nb6, nb7, nb8, nb9, nb10, nb11, nb12, nb13, nb14, nb15, nb16, nb17, nb18, nb19, nb20;
+            Console.WriteLine("Saisir 20 nombres");
+            nb1 = double.Parse(Console.ReadLine());
+            nb2 = double.Parse(Console.ReadLine());
+            nb3 = double.Parse(Console.ReadLine());
+            nb4 = double.Parse(Console.ReadLine());
+            nb5 = double.Parse(Console.ReadLine());
+            nb6 = double.Parse(Console.ReadLine());
+            nb7 = double.Parse(Console.ReadLine());
+            nb8 = double.Parse(Console.ReadLine());
+            nb9 = double.Parse(Console.ReadLine());
+            nb10 = double.Parse(Console.ReadLine());
+            nb11 = double.Parse(Console.ReadLine());
+            nb12 = double.Parse(Console.ReadLine());
+            nb13 = double.Parse(Console.ReadLine());
+            nb14 = double.Parse(Console.ReadLine());
+            nb15 = double.Parse(Console.ReadLine());
+            nb16 = double.Parse(Console.ReadLine());
+            nb17 = double.Parse(Console.ReadLine());
+            nb18 = double.Parse(Console.ReadLine());
+            nb19 = double.Parse(Console.ReadLine());
+            nb20 = double.Parse(Console.ReadLine());
+
+            if (nb1 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb1); }
+            if (nb2 > (nb1 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb2); }
+            if (nb3 > (nb2 + nb1 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb3); }
+            if (nb4 > (nb2 + nb3 + nb1 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb4); }
+            if (nb5 > (nb2 + nb3 + nb4 + nb1 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb5); }
+            if (nb6 > (nb2 + nb3 + nb4 + nb5 + nb1 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb6); }
+            if (nb7 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb1 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb7); }
+            if (nb8 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb1 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb8); }
+            if (nb9 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb1 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb9); }
+            if (nb10 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb1 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb10); }
+            if (nb11 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb1 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb11); }
+            if (nb12 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb1 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb12); }
+            if (nb13 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb1 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb13); }
+            if (nb14 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb1 + nb15 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb14); }
+            if (nb15 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb11 + nb16 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb15); }
+            if (nb16 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb1 + nb17 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb16); }
+            if (nb17 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb1 + nb18 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb17); }
+            if (nb18 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb1 + nb19 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb18); }
+            if (nb19 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb1 + nb20) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb19); }
+            if (nb20 > (nb2 + nb3 + nb4 + nb5 + nb6 + nb7 + nb8 + nb9 + nb10 + nb11 + nb12 + nb13 + nb14 + nb15 + nb16 + nb17 + nb18 + nb19 + nb1) / 19)
+            { Console.WriteLine("Le plus grand nombre saisi est" + " " + nb20); }
+
+            Console.ReadLine();
+
+        }
+    }
+}
+
